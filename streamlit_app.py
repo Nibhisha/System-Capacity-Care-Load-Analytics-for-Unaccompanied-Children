@@ -1,37 +1,127 @@
-Date,Children apprehended and placed in CBP custody,Children transferred out of CBP custody,Children discharged from HHS Care,Children in CBP custody,Children in HHS Care,Total System Load,Net Daily Intake,Care Load Volatility Index,Discharge Offset Ratio
-2023-01-01,247.0,276.0,1856.0,45.525,7153.4,7198.925,-1580.0,198.04101695856983,8.761460019382493
-2023-02-01,1886.0,2637.0,5183.0,172.21428571428572,7780.892857142857,7953.107142857143,-2546.0,179.37384046084233,4.885849365376958
-2023-03-01,2479.0,3399.0,5375.0,246.9516129032258,7915.209677419355,8162.1612903225805,-1976.0,118.87659459613874,1.616771610449665
-2023-04-01,3129.0,3967.0,5668.0,251.06666666666666,7850.8,8101.866666666667,-1701.0,180.98577044878184,1.4665539433335757
-2023-05-01,2746.0,3622.0,6256.0,210.3709677419355,8149.096774193548,8359.467741935483,-2634.0,326.7949260164719,2.1380124501815936
-2023-06-01,1774.0,2416.0,4029.0,143.63333333333333,6134.761111111112,6278.394444444445,-1613.0,270.7064412717257,2.513213135498285
-2023-07-01,2858.0,3897.0,4407.0,243.53225806451613,6789.602150537634,7033.13440860215,-510.0,239.96324898742128,1.1380667105176172
-2023-08-01,2751.0,3587.0,6470.0,236.25806451612902,9322.451612903225,9558.709677419354,-2883.0,359.4103397990341,1.8168567077608209
-2023-09-01,3194.0,3971.0,6546.0,284.1333333333333,10641.566666666668,10925.7,-2575.0,198.9868801030702,1.680232507403072
-2023-10-01,1486.0,2049.0,7658.0,102.2741935483871,10225.241935483871,10327.516129032258,-5609.0,297.64212214049724,5.158712768886326
-2023-11-01,2299.0,3198.0,5992.0,190.4,9691.416666666666,9881.816666666668,-2794.0,198.17522458900967,2.055054089745985
-2023-12-01,2207.0,3105.0,6804.0,183.17741935483872,11046.758064516129,11229.935483870968,-3699.0,228.68193380644382,2.423568347943667
-2024-01-01,2097.0,2850.0,6496.0,161.2258064516129,8788.516129032258,8949.741935483871,-3646.0,473.1318159287492,4.503043038177746
-2024-02-01,4517.0,6332.0,5273.0,452.0689655172414,8305.603448275862,8757.672413793103,1059.0,133.18157873553875,0.8626612751051876
-2024-03-01,3377.0,5209.0,5678.0,325.06451612903226,8362.838709677419,8687.90322580645,-469.0,199.4005718065686,1.1583285607842675
-2024-04-01,3424.0,5178.0,4474.0,304.7,7013.933333333333,7318.633333333333,704.0,236.94897752977633,0.9157565107352071
-2024-05-01,3493.0,5194.0,4336.0,339.1182795698925,7487.768817204302,7826.887096774193,858.0,126.46640302818085,0.8525422048745361
-2024-06-01,3376.0,4882.0,4911.0,281.77777777777777,7398.4222222222215,7680.2,-29.0,112.79757687538033,1.0442808734709295
-2024-07-01,2563.0,3679.0,3899.0,211.74193548387098,6299.435483870968,6511.177419354839,-220.0,188.70964742620234,1.0920665447364337
-2024-08-01,2656.0,3546.0,3073.0,257.4596774193548,6019.435483870968,6276.895161290323,473.0,100.0332326487112,0.9062460260038631
-2024-09-01,2783.0,3987.0,3692.0,235.875,6207.183333333333,6443.058333333333,295.0,94.1047315836892,0.9404330329140478
-2024-10-01,2736.0,3886.0,3194.0,240.0483870967742,6027.532258064516,6267.580645161291,692.0,65.33332711114777,0.8284227972790155
-2024-11-01,2664.0,3414.0,3001.0,232.78333333333333,5929.716666666666,6162.5,413.0,83.03400764573865,0.8945107052463639
-2024-12-01,3480.0,4395.0,3662.0,263.35483870967744,6435.241935483871,6698.596774193548,733.0,135.3043165719744,0.8662309823990996
-2025-01-01,1311.0,1750.0,3330.0,90.13978494623656,4991.10752688172,5081.247311827957,-1580.0,328.8810062777758,2.7539059283257066
-2025-02-01,312.0,341.0,1160.0,21.577380952380953,2774.7440476190473,2796.3214285714284,-819.0,294.8064015047391,4.367093804783799
-2025-03-01,169.0,190.0,309.0,21.35483870967742,2165.849462365591,2187.2043010752686,-119.0,54.7063003194276,2.2049124156267013
-2025-04-01,189.0,230.0,203.0,24.2,2273.4,2297.6,27.0,23.083499552872947,1.039739051088156
-2025-05-01,217.0,252.0,205.0,31.725806451612904,2419.6451612903224,2451.3709677419356,47.0,28.63515914254517,0.8351999988029399
-2025-06-01,123.0,138.0,281.0,20.05,2495.4666666666667,2515.516666666667,-143.0,15.104686762240272,2.843752652576182
-2025-07-01,70.0,88.0,396.0,14.661290322580646,2194.8225806451615,2209.483870967742,-308.0,51.71795440741089,5.3693400167084375
-2025-08-01,107.0,147.0,254.0,25.387096774193548,2003.1935483870968,2028.5806451612902,-107.0,15.918767630082304,2.0683585858585856
-2025-09-01,204.0,260.0,237.0,35.833333333333336,2082.9333333333334,2118.766666666667,23.0,24.115302174646907,1.2655356312096124
-2025-10-01,168.0,263.0,242.0,34.38172043010753,2229.489247311828,2263.8709677419356,21.0,18.78118281960596,1.1299276587091713
-2025-11-01,129.0,182.0,159.0,33.705555555555556,2329.411111111111,2363.116666666667,23.0,18.184314073015127,1.1661872484240905
-2025-12-01,116.0,124.0,144.0,36.0,2446.714285714286,2482.714285714286,-20.0,19.566273030629908,1.3308818958818958
+import os
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+
+st.set_page_config(page_title="UAC System Capacity & Care Load Analytics", layout="wide")
+st.title("System Capacity & Care Load Analytics for Unaccompanied Children")
+st.caption("Operational analytics dashboard for CBP custody, HHS care, transfers, discharges, capacity stress, and backlog pressure.")
+
+DATA_FILE = "processed_uac_metrics.csv"
+
+@st.cache_data
+def load_data(path: str = DATA_FILE) -> pd.DataFrame:
+    if not os.path.exists(path):
+        st.error(f"Data file not found: {path}")
+        st.write("Files found in this folder:", os.listdir("."))
+        st.stop()
+
+    df = pd.read_csv(path)
+    df.columns = df.columns.str.strip()
+
+    if "Date" not in df.columns:
+        st.error("The dataset must contain a Date column.")
+        st.write("Columns found:", list(df.columns))
+        st.stop()
+
+    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+    df = df.dropna(subset=["Date"]).sort_values("Date")
+
+    numeric_cols = [c for c in df.columns if c != "Date"]
+    for col in numeric_cols:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    required = [
+        "Children in CBP custody",
+        "Children in HHS Care",
+        "Children transferred out of CBP custody",
+        "Children discharged from HHS Care",
+    ]
+    missing = [c for c in required if c not in df.columns]
+    if missing:
+        st.error("Missing required columns: " + ", ".join(missing))
+        st.write("Columns found:", list(df.columns))
+        st.stop()
+
+    if "Total System Load" not in df.columns:
+        df["Total System Load"] = df["Children in CBP custody"] + df["Children in HHS Care"]
+    if "Net Daily Intake" not in df.columns:
+        df["Net Daily Intake"] = df["Children transferred out of CBP custody"] - df["Children discharged from HHS Care"]
+    if "Backlog Indicator" not in df.columns:
+        df["Backlog Indicator"] = df["Net Daily Intake"].rolling(7, min_periods=1).sum()
+    if "Care Load Volatility Index" not in df.columns:
+        df["Care Load Volatility Index"] = df["Total System Load"].pct_change().abs().rolling(7, min_periods=1).mean() * 100
+    if "Stress Threshold P90" not in df.columns:
+        df["Stress Threshold P90"] = df["Total System Load"].quantile(0.90)
+
+    return df
+
+df = load_data()
+
+with st.sidebar:
+    st.header("Controls")
+    min_d, max_d = df["Date"].min().date(), df["Date"].max().date()
+    dr = st.date_input("Date range", [min_d, max_d], min_value=min_d, max_value=max_d)
+    gran = st.selectbox("Time granularity", ["Daily", "Weekly", "Monthly"])
+
+    available_metrics = [
+        "Children in CBP custody",
+        "Children in HHS Care",
+        "Total System Load",
+        "Net Daily Intake",
+        "Backlog Indicator",
+        "Care Load Volatility Index",
+    ]
+    available_metrics = [m for m in available_metrics if m in df.columns]
+    metrics = st.multiselect(
+        "Metrics",
+        available_metrics,
+        default=[m for m in ["Children in CBP custody", "Children in HHS Care", "Total System Load"] if m in available_metrics],
+    )
+
+if len(dr) == 2:
+    start, end = pd.to_datetime(dr[0]), pd.to_datetime(dr[1])
+    view = df[(df["Date"] >= start) & (df["Date"] <= end)].copy()
+else:
+    view = df.copy()
+
+if view.empty:
+    st.warning("No records found for the selected date range.")
+    st.stop()
+
+if gran != "Daily":
+    rule = "W-MON" if gran == "Weekly" else "MS"
+    mean_cols = [c for c in ["Children in CBP custody", "Children in HHS Care", "Total System Load", "Backlog Indicator", "Care Load Volatility Index", "Stress Threshold P90"] if c in view.columns]
+    sum_cols = [c for c in ["Children apprehended and placed in CBP custody", "Children transferred out of CBP custody", "Children discharged from HHS Care", "Net Daily Intake"] if c in view.columns]
+    agg = {c: "mean" for c in mean_cols}
+    agg.update({c: "sum" for c in sum_cols})
+    view = view.set_index("Date").resample(rule).agg(agg).reset_index()
+
+latest = view.iloc[-1]
+cols = st.columns(5)
+cols[0].metric("Total Children Under Care", f"{latest.get('Total System Load', 0):,.0f}")
+cols[1].metric("CBP Custody", f"{latest.get('Children in CBP custody', 0):,.0f}")
+cols[2].metric("HHS Care", f"{latest.get('Children in HHS Care', 0):,.0f}")
+cols[3].metric("Net Intake Pressure", f"{latest.get('Net Daily Intake', 0):,.0f}")
+cols[4].metric("Backlog Indicator", f"{latest.get('Backlog Indicator', 0):,.0f}")
+
+st.subheader("System Load Overview")
+if metrics:
+    long = view.melt(id_vars="Date", value_vars=metrics, var_name="Metric", value_name="Children")
+    st.plotly_chart(px.line(long, x="Date", y="Children", color="Metric"), use_container_width=True)
+else:
+    st.info("Select at least one metric from the sidebar.")
+
+c1, c2 = st.columns(2)
+with c1:
+    st.subheader("CBP vs HHS Load Comparison")
+    st.plotly_chart(px.area(view, x="Date", y=["Children in CBP custody", "Children in HHS Care"]), use_container_width=True)
+with c2:
+    st.subheader("Net Intake & Backlog Trends")
+    st.plotly_chart(px.line(view, x="Date", y=["Net Daily Intake", "Backlog Indicator"]), use_container_width=True)
+
+st.subheader("Capacity Stress Monitor")
+st.plotly_chart(px.line(view, x="Date", y=["Total System Load", "Stress Threshold P90"]), use_container_width=True)
+
+st.subheader("Data Table")
+st.dataframe(view, use_container_width=True)
