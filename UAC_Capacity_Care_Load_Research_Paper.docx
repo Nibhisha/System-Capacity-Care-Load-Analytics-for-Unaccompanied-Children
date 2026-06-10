@@ -1,0 +1,61 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+
+st.set_page_config(page_title="UAC System Capacity & Care Load Analytics", layout="wide")
+st.title("System Capacity & Care Load Analytics for Unaccompanied Children")
+st.caption("Operational analytics dashboard for CBP custody, HHS care, transfers, discharges, capacity stress, and backlog pressure.")
+
+@st.cache_data
+def load_data(path="processed_uac_metrics.csv"):
+    df = pd.read_csv(path, parse_dates=["Date"])
+    return df
+
+df = load_data()
+with st.sidebar:
+    st.header("Controls")
+    min_d, max_d = df["Date"].min().date(), df["Date"].max().date()
+    dr = st.date_input("Date range", [min_d, max_d], min_value=min_d, max_value=max_d)
+    gran = st.selectbox("Time granularity", ["Daily", "Weekly", "Monthly"])
+    metrics = st.multiselect("Metrics", ["Children in CBP custody", "Children in HHS Care", "Total System Load", "Net Daily Intake", "Backlog Indicator", "Care Load Volatility Index"], default=["Children in CBP custody", "Children in HHS Care", "Total System Load"])
+
+if len(dr)==2:
+    start, end = pd.to_datetime(dr[0]), pd.to_datetime(dr[1])
+    view = df[(df["Date"]>=start)&(df["Date"]<=end)].copy()
+else:
+    view = df.copy()
+
+if gran != "Daily":
+    rule = "W-MON" if gran == "Weekly" else "MS"
+    agg = {c:"mean" for c in ["Children in CBP custody", "Children in HHS Care", "Total System Load", "Backlog Indicator", "Care Load Volatility Index", "Stress Threshold P90"]}
+    agg.update({c:"sum" for c in ["Children apprehended and placed in CBP custody", "Children transferred out of CBP custody", "Children discharged from HHS Care", "Net Daily Intake"]})
+    view = view.set_index("Date").resample(rule).agg(agg).reset_index()
+
+latest = view.iloc[-1]
+cols = st.columns(5)
+cols[0].metric("Total Children Under Care", f"{latest['Total System Load']:,.0f}")
+cols[1].metric("CBP Custody", f"{latest['Children in CBP custody']:,.0f}")
+cols[2].metric("HHS Care", f"{latest['Children in HHS Care']:,.0f}")
+cols[3].metric("Net Intake Pressure", f"{latest['Net Daily Intake']:,.0f}")
+cols[4].metric("Backlog Indicator", f"{latest['Backlog Indicator']:,.0f}")
+
+st.subheader("System Load Overview")
+if metrics:
+    long=view.melt(id_vars="Date", value_vars=metrics, var_name="Metric", value_name="Children")
+    st.plotly_chart(px.line(long, x="Date", y="Children", color="Metric"), use_container_width=True)
+
+c1, c2 = st.columns(2)
+with c1:
+    st.subheader("CBP vs HHS Load Comparison")
+    st.plotly_chart(px.area(view, x="Date", y=["Children in CBP custody","Children in HHS Care"]), use_container_width=True)
+with c2:
+    st.subheader("Net Intake & Backlog Trends")
+    st.plotly_chart(px.line(view, x="Date", y=["Net Daily Intake","Backlog Indicator"]), use_container_width=True)
+
+st.subheader("Capacity Stress Monitor")
+fig = px.line(view, x="Date", y=["Total System Load", "Stress Threshold P90"])
+st.plotly_chart(fig, use_container_width=True)
+
+st.subheader("Data Table")
+st.dataframe(view, use_container_width=True)
